@@ -2,6 +2,7 @@
   "name": "todo-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dasu23.github.io/todo-react",
   "dependencies": {
     "@babel/core": "^7.27.1",
     "@babel/eslint-parser": "^7.27.1",
@@ -29,7 +30,9 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src && npx prettier --write .",
     "format": "format",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
@@ -45,6 +48,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^6.3.0",
     "husky": "^8.0.0"
   }
 }
