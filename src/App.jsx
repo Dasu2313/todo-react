@@ -26,7 +26,11 @@ function App() {
                 updateTasks={(newVal, oldIdx) => {
                   setTasks((prevTasks) =>
                     prevTasks.map((val, idx) => {
-                      if (idx === oldIdx) return newVal
+                      if (idx === oldIdx)
+                        return {
+                          ...val,
+                          ...newVal,
+                        }
 
                       return val
                     })
