@@ -9,7 +9,6 @@ src/**/*.json
 
 # Специфичные файлы и папки
 node_modules
-build
 dist
 public
 .husky
@@ -18,3 +17,4 @@ public
 *.html
 *.css
 .eslintignore
+.gitignore
